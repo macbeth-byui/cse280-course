@@ -1,15 +1,11 @@
 # CSE 280 Prove 6
 
 (c) BYU-Idaho - It is an honor code violation to post this
-file completed or uncompleted in a public file sharing site.
+file completed or uncompleted in a public file sharing site. S4.
 
 **Instructions**: Answer each question using proper markdown notation as needed.  Use the preview view in Visual Studio Code (or another editor if desired) to see the formatting, tables, and mathematical formula properly rendered.  If you need to write code, then first test your code in a separate file and then copy the code into this document using code fences. 
 
 **Name**:
-
-**Section**:
-
-**Teacher**:
 
 ## Question 1 (5 points)
 
@@ -40,14 +36,19 @@ The list of 9 graphs below have 4 pairs of isomorphic graphs.  Find the 4 pairs.
 
 Source: Question adapted from Applied Discrete Structures by Alan Doerr & Kenneth Levasseur which is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 United States License.
 
-## Question 3 (11 points)
+## Question 3 (4 points)
 
 Write python code to create an adjacency table for the undirected graph below.  Second, implement the `find_neighbors` function which will take as input vertex and the adjaceny table and returns a list of verticies that are adjacent to the input vertex.  Finally, implement the `is_neighbor` which takes two verticies and the adjaceny table and returns True if they are adjacent; False otherwise.
 
 ![](prove06_graph3.png)
 
 ```python
-adjacency_table = None # Add your code here
+adjacency_table = {"A": ["B","C"], 
+                   "B": ["A","C"],
+                   "C": ["A","B","D"],
+                   "D": ["C","E","F"],
+                   "E": ["D","F"],
+                   "F": ["D","E"]}
 
 def find_neighbors(vertex, adjaceny_table):
     # Add your code here
@@ -65,11 +66,11 @@ print(is_neighbor('D','F',adjacency_table)) # True
 print(is_neighbor('C','F',adjacency_table)) # False
 ```
 
-## Question 4 (6 points)
+## Question 4 (12 points)
 
-Determine if the graph below has an Euler Circuit.  If it does, then write down the sequence of verticies that make up the Euler Circuit.  If it does not, then write "No Euler Cycle"
+Determine if the graph below has an Euler Circuit.  If it does, then write down the sequence of verticies that make up the Euler Circuit.  If it does not, then write "No Euler Circuit"
 
-|Graph|Euler Cycle|
+|Graph|Euler Circuit|
 |:-:|:-:|
 |![](prove06_graph4.png)||
 |![](prove06_graph5.png)||
@@ -109,7 +110,7 @@ Complete the tables below to identify the final state (per the FSM diagram) and 
 |11100|||
 |10011|||
 
-## Question 6 (4 points)
+## Question 6 (5 points)
 
 Describe the bit string recognized/accepted by the following FSM:
 

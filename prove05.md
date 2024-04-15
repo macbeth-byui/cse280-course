@@ -1,15 +1,11 @@
 # CSE 280 Prove 05
 
 (c) BYU-Idaho - It is an honor code violation to post this
-file completed or uncompleted in a public file sharing site.
+file completed or uncompleted in a public file sharing site. S4.
 
 **Instructions**: Answer each question using proper markdown notation as needed.  Use the preview view in Visual Studio Code (or another editor if desired) to see the formatting, tables, and mathematical formula properly rendered.  If you need to write code, then first test your code in a separate file and then copy the code into this document using code fences. 
 
 **Name**:
-
-**Section**:
-
-**Teacher**:
 
 ## Question 1 (5 points)
 

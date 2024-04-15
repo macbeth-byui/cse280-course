@@ -1,17 +1,13 @@
 # CSE 280 Prove 7
 
 (c) BYU-Idaho - It is an honor code violation to post this
-file completed or uncompleted in a public file sharing site.
+file completed or uncompleted in a public file sharing site. S4.
 
 **Instructions**: Answer each question using proper markdown notation as needed.  Use the preview view in Visual Studio Code (or another editor if desired) to see the formatting, tables, and mathematical formula properly rendered.  If you need to write code, then first test your code in a separate file and then copy the code into this document using code fences. 
 
 **Name**:
 
-**Section**:
-
-**Teacher**:
-
-## Question 1 (10 points)
+## Question 1 (11 points)
 
 Using the encoding tree below, encode the word "MISSISSIPPI".
 
@@ -25,7 +21,7 @@ Referring back to Question 1, how many bits smaller is the encoded value of "MIS
 
 Answer: 
 
-## Question 3 (15 points)
+## Question 3 (14 points)
 
 Identify the pre-order and post-order traversal for the tree below.  Your answer to each should be comma separated list (in proper order) of the letters A through T.
 

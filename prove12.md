@@ -1,15 +1,13 @@
 # CSE 280 Prove 12
 
 (c) BYU-Idaho - It is an honor code violation to post this
-file completed or uncompleted in a public file sharing site.
+file completed or uncompleted in a public file sharing site. S4.
 
 **Instructions**: Answer each question using proper markdown notation as needed.  Use the preview view in Visual Studio Code (or another editor if desired) to see the formatting, tables, and mathematical formula properly rendered.  If you need to write code, then first test your code in a separate file and then copy the code into this document using code fences. 
 
 **Name**:
 
-**Section**:
-
-**Teacher**:
+**IMPORTANT: For all problems, you need to calculate the exponents and factorials to get a single integer value.**
 
 ## Question 1 (3 points)
 
@@ -66,7 +64,7 @@ Suppose you flip a fair coin 10 times.  Determine how many ways you can get each
 
 ## Question 8 (3 points)
 
-Consider the following fruit that is available to you: raspberries, strawberries, blueberries, apples, oranges, bananas, kiwi, papaya, and mango.  Just choosing five from the list of 9, how many different combinations (with no duplicates) of fruit salad can you make?
+Consider the following fruit that is available to you: raspberries, strawberries, blueberries, apples, oranges, bananas, kiwi, papaya, and mango.  Just choosing five from the list of 9, how many different fruit salads (with no duplicates of fruits) can you make??
 
 **Answer**: 
 
@@ -76,7 +74,7 @@ What is the number of unique strings that can be formed by reordering the charac
 
 **Answer**: 
 
-## Question 10 (22 points)
+## Question 10 (24 points)
 
 ### Part 1
 

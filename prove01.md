@@ -1,15 +1,11 @@
 # CSE 280 Prove 01
 
 (c) BYU-Idaho - It is an honor code violation to post this
-file completed or uncompleted in a public file sharing site.
+file completed or uncompleted in a public file sharing site. S4.
 
 **Instructions**: Answer each question using proper markdown notation as needed.  Use the preview view in Visual Studio Code (or another editor if desired) to see the formatting, tables, and mathematical formula properly rendered.  If you need to write code, then first test your code in a separate file and then copy the code into this document using code fences. 
 
 **Name**: 
-
-**Section**:
-
-**Teacher**:
 
 ## Question 1 (5 points)
 
@@ -107,7 +103,21 @@ Determine if the following propositions written in English are True or False (th
 
 ## Question 4 (5 points)
 
-There is another operator called exclusive or which uses the operator symbol $\oplus$.  It is like the traditional $\lor$ but it excludes the case where both $p$ and $q$ are True.  This operator is used frequently in electronics.  The truth table for $p \oplus q$ is given below:
+In electronics, you can create an Adder which will add binary values together and produce the correct response.  The correct response will include the result and a carry value.  For example, if you have $1_b + 1_b$ this will result is $0$ carry $1$.  Here is a summary of all possible cases for $A+B$
+
+|$A$|$B$|Result|Carry|
+|---|---|------|-----|
+| 0 | 0 |   0  |  0  |
+| 0 | 1 |   1  |  0  |
+| 1 | 0 |   1  |  0  |
+| 1 | 1 |   0  |  1  |
+
+The Adder can be defined logically by the following:  
+
+* Result = $A \oplus B$
+* Carry = $A \land B$
+
+Recall that exclusive or ($\oplus$) is defined by the following truth table:
 
 |$p$|$q$|$p \oplus q$|
 |:-:|:-:|:-:|
@@ -116,23 +126,15 @@ There is another operator called exclusive or which uses the operator symbol $\o
 |F|T|T|
 |F|F|F|
 
-There is no built-in python function that implements exclusive or.  Implement the `xor` function below using the `and`, `or`, and `not` operators.  
+Implement the `adder` function in Python below by setting `result` and `carry` equal to the correct expressions.
 
 ```python
-def xor(p, q):
+def adder(A, B):
     # Your code here
-    pass
+    return (result, carry)
 
-def truth_table_2_vars(function):
-    print(f"{function.__name__}")
-    print(f"{'p':<8}{'q':<8}{'ANS':<8}")
-    print("----------------------------------------")
-    rows = [(p,q) for p in (True, False) 
-                  for q in (True, False)]    
-    for p, q in rows:
-        ans = function(p,q)
-        print(f"{p!s:<8}{q!s:<8}{ans!s:<8}")
-    print()
-
-truth_table_2_vars(xor)
+print(f"0 + 0 = {adder(0,0)}")  # 0 + 0 = (0, 0)
+print(f"0 + 1 = {adder(0,1)}")  # 0 + 1 = (1, 0)
+print(f"1 + 0 = {adder(1,0)}")  # 1 + 0 = (1, 0)
+print(f"1 + 1 = {adder(1,1)}")  # 1 + 1 = (0, 1)
 ```

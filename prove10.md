@@ -1,15 +1,11 @@
 # CSE 280 Prove 10
 
 (c) BYU-Idaho - It is an honor code violation to post this
-file completed or uncompleted in a public file sharing site.
+file completed or uncompleted in a public file sharing site. S4.
 
 **Instructions**: Answer each question using proper markdown notation as needed.  Use the preview view in Visual Studio Code (or another editor if desired) to see the formatting, tables, and mathematical formula properly rendered.  If you need to write code, then first test your code in a separate file and then copy the code into this document using code fences. 
 
 **Name**:
-
-**Section**:
-
-**Teacher**:
 
 ## Question 1 (5 points)
 
@@ -23,7 +19,7 @@ Evaluate the following as "True" or "False":
 |$73 \vert 1752$||
 |$73 \vert 1753$||
 
-## Question 2 (5 points)
+## Question 2 (10 points)
 
 Given the following expressions, solve for $n$:
 
@@ -35,7 +31,7 @@ Given the following expressions, solve for $n$:
 |$n \text{ div } 15 = 4 \text{ , } n \text{ mod } 15 = 7$||
 |$n \text{ div } 13 = -2 \text{ , } n \text{ mod } 13 = 3$||
 
-## Question 3 (6 points)
+## Question 3 (12 points)
 
 For the given values of $x$, $y$, and $m$, determine if $x \equiv y (\text{mod } m)$ by marking "Yes" or "No" in the congruence column.
 
@@ -48,7 +44,8 @@ For the given values of $x$, $y$, and $m$, determine if $x \equiv y (\text{mod }
 |17|6|5||
 |81|37|11||
 
-## Question 4 (15 points)
+## Question 4 (12 points)
+
 Find the GCD and LCM of the following numbers shown in non-decresasing prime factorization format.  Write your answers using non-decreasing prime factorization.  The first GCD one is done for you.
 
 |$x$|$y$|$GCD(x,y)$|$LCM(x,y)$|
@@ -73,7 +70,7 @@ $S = \lbrace -48, -26, 1, 8, 3, 70, 24, 32, 11, 5, 27, 19, 49 \rbrace$
 |$[5]$|$\lbrace  \rbrace$|
 |$[6]$|$\lbrace  \rbrace$|
 
-## Question 6 (12 points)
+## Question 6 (4 points)
 
 The python code below computes the GCD and LCM for two integers $x$ and $y$.  The GCD function is implemented for you.  Complete the LCM function.  Use the test code to verify your code.
 

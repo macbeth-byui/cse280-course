@@ -1,15 +1,11 @@
 # CSE 280 Prove 11
 
 (c) BYU-Idaho - It is an honor code violation to post this
-file completed or uncompleted in a public file sharing site.
+file completed or uncompleted in a public file sharing site. S4.
 
 **Instructions**: Answer each question using proper markdown notation as needed.  Use the preview view in Visual Studio Code (or another editor if desired) to see the formatting, tables, and mathematical formula properly rendered.  If you need to write code, then first test your code in a separate file and then copy the code into this document using code fences. 
 
 **Name**:
-
-**Section**:
-
-**Teacher**:
 
 ## Question 1 (9 points)
 
@@ -78,20 +74,23 @@ Find the multiplicative inverse for $x \text{ mod } n$ in the table below.  Thes
 |3|13||
 
 ## Question 4 (9 points)
-Use the Extended Euclidean Algorithm to find the multiplicative inverse of $83 \text{ mod } 96$.  You can check your answer by verifying that $s*83 \text{ mod } 96 = 1$ where $s$ is the multiplicative inverse you calculated.  
+Use the Extended Euclidean Algorithm to find the multiplicative inverse of $83 \text{ mod } 96$.  
 
-In your answer, provide both the linear combination of $1 = s*83 + t*96$ and the multiplicative inverse derived from it.
+Answer:
 
-Answers:
-* $s = $
-* $t = $
-* Multiplicative Inverse = 
+## Question 5 (15 points)
 
-## Question 5 (14 points)
+### Part 1 
 
-### Part 1
+Create the private RSA keys by using the following inputs for RSA:
 
-Create public and private RSA keys by using the two prime number $p = 137$ and $q = 211$. Calculate $N$ and $\phi$.  Select a value of $e$ such that $gcd(e,\phi)=1$.  Find the multiplicative inverse for $e \text{ mod } \phi$ (called $d$).  You can use the following code to find the value of $d$.  This code implements the Extended Eculidean Algorithm and provides the GCD and the linear combination for the GCD.  If `x` and `y` are provided to the function, it will return a tuple `(r,s,t)` where `r` is the GCD and $r = s*x + t*y$.
+* Prime numbers:
+    * $p = 137$
+    * $q = 211$
+* Public Key:
+    * $e = 19$
+    
+You can use the following python code to do part of the calculations needed. This code implements the Extended Eculidean Algorithm and provides the GCD and the linear combination for the GCD.  If `x` and `y` are provided to the function, it will return a tuple `(r,s,t)` where `r` is the GCD and $r = s*x + t*y$.
 
 ```python
 def gcd_ext(x,y):
@@ -105,34 +104,29 @@ def gcd_ext(x,y):
         (old_s, s) = (s, old_s - q * s)
         (old_t, t) = (t, old_t - q * t)
     return (old_r, old_s, old_t)
-``````
+```
 
-Answers:
-* $p = 137$
-* $q = 211$
-* $N = $
-* $\phi = $
-* $e = $
-* $d = $
+Answer:
+* d (private key) =
 
 ### Part 2
 
-The values of $N$ and $e$ are the public keys.  The value of $d$ is the private key.  Complete the python code below to encrypt the value $m = 5645$ and then decrypt it again. 
+Write code in Python do the following using the values from Part 1 above:
+
+1. Encrypt the value $5465$ and display the encrypted result
+2. Decrypt the value previously displayed and verify that it is $5465$ again.
+
 
 ```python
-# Put your values from Part 1
-p = 137
-q = 211
-e = 
-N = 
-phi = 
-d = 
-
 m = 5645
 # Write code to encrypt 'm' and display it
 
+print(c)
 # Write code to decrypt it back again and display it.   It should be 5645 again.
 
+print(m)
 ```
+
+
 
   

@@ -1,19 +1,15 @@
 # CSE 280 Prove 04
 
 (c) BYU-Idaho - It is an honor code violation to post this
-file completed or uncompleted in a public file sharing site.
+file completed or uncompleted in a public file sharing site. S4.
 
 **Instructions**: Answer each question using proper markdown notation as needed.  Use the preview view in Visual Studio Code (or another editor if desired) to see the formatting, tables, and mathematical formula properly rendered.  If you need to write code, then first test your code in a separate file and then copy the code into this document using code fences. 
 
 **Name**:
 
-**Section**:
-
-**Teacher**:
-
 ## Question 1 (24 points)
 
-For each of these functions, determine if they are well-defined, one-to-one, and/or onto.  Put "Yes" or "No" in the appropriate columns.  For the first 4 problems, let $A=\lbrace 1,2,3,4 \rbrace$ and $B=\lbrace a, b, c, d \rbrace$.  For the last 4 functions written in the format $f(x)=$ you may find it helpful to graph the function on [Desmos](https://www.desmos.com/).  The first one is done for you.
+For each of these functions, determine if they are well-defined, one-to-one, and/or onto.  Put "Yes" or "No" in the appropriate columns.  For the first 4 problems, let $A=\lbrace 1,2,3,4 \rbrace$ and $B=\lbrace a, b, c, d \rbrace$. If a function is not well defined, then mark no for both one-to-one and onto. For the last 4 functions written in the format $f(x)=$ you may find it helpful to graph the function on [Desmos](https://www.desmos.com/).  The first one is done for you.
 
 |Function|Well-Defined Function|One-to-One Function|Onto Function|
 |:-:|:-:|:-:|:-:|
@@ -23,7 +19,7 @@ For each of these functions, determine if they are well-defined, one-to-one, and
 |$f : A \to B, \text{ where } f = \lbrace (1,a),(2,b),(2,c),(3,a),(4,a) \rbrace$||||
 |$f : \mathbf{R} \to \mathbf{R}, \text{ where } f(x) = x^3-x$||||
 |$f : \mathbf{Z} \to \mathbf{Z}, \text{ where } f(x) = -x+2$||||
-|$f : \mathbf{Z}^+ \to \mathbf{Z}^+, \text{ where } f(x) = \lceil \frac {n}{2} \rceil$||||
+|$f : \mathbf{Z}^+ \to \mathbf{Z}^+, \text{ where } f(x) = \lceil \frac {x}{2} \rceil$||||
 |$f : \mathbf{R} \to \mathbf{R}, \text{ where } f(x) = \frac{5}{x-5}$||||
 |$f : \lbrace x \mid x \in \mathbf{R} , x \ne 5 \rbrace \to \mathbf{R}, \text{ where } f(x) = \frac{5}{x-5}$||||
 
@@ -43,8 +39,8 @@ Find the inverse of each of the following functions, calculate $f(3)$, and then 
 |Domain|$f(x)$|$f^{-1}(x)$|$f(3)$|$(f^{-1} \circ f)(3)$
 |:-:|:-:|:-:|:-:|:-:|
 |$f : \mathbf{R} \to \mathbf{R}$|$2x+3$||||
-|$f : \lbrace x \in \mathbf{R} : x \gt 0 \rbrace \to \mathbf{R}$|$3^x$||||
-|$f : \lbrace x \in \mathbf{R} : x \ge -2 \rbrace \to \mathbf{R}^+$|$x^2-2$||||
+|$f : \mathbf{R}^+ \to \lbrace y \mid y \in \mathbf{R}, y \gt 1 \rbrace$|$3^x$||||
+|$f : \lbrace x \mid x \in \mathbf{R}, x \gt \sqrt{2} \rbrace \to \lbrace y \mid y \in \mathbf{R}, y \gt 0 \rbrace$|$x^2-2$||||
 
 
 ## Question 4 (8 points)

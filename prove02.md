@@ -103,8 +103,9 @@ def in_unit_circle(point):
 
 def forall(predicate, domain):
     print(f"\u2200x ({predicate.__name__}) domain={domain}")
-    if not predicate(item):
-        return False
+    for item in domain:
+        if not predicate(item):
+            return False
     return True
 
 def exists(predicate, domain):

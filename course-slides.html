@@ -1,0 +1,36 @@
+---
+layout: null
+permalink: course-slides.html
+---
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSE280 Discrete Math Course Slides</title>
+    <link rel="stylesheet" href="site/style.css">
+</head>
+
+<body>
+    <header id="courseTitle">
+        <span class="icon-byui-logo"></span>
+        <h1><a href="./">CSE280 Discrete Mathematics</a></h1>
+    </header>
+    <article>
+        <h1>Course Slides</h1>
+        <p>Several slide decks have been created for select topics in the course.  You can use these to further your study.</p>
+        <nav>
+            <ul>
+                {% for file in site.static_files %}
+                    {% if file.path contains 'slides/' and file.name contains '.pdf' %}
+                    <li><p><a href="./{{ file.path }}">{{ file.name }}</a></p></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+        </nav>
+    </article>
+</body>
+
+</html>

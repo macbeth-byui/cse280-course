@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/4.0.0/github-markdown.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/styles/default.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markdown-it-texmath/css/texmath.min.css">
+<link rel="stylesheet" href="file:///c:\Users\cmacbeth\.vscode\extensions\goessner.mdmath-2.7.4\themes\default\style.css">
+
+</head>
+<body class="markdown-body">
+<h1 dir="auto" id="cse-280-challenge-set-13">CSE 280 Challenge Set 13</h1>
+<p dir="auto">(c) BYU-Idaho</p>
+<h2 dir="auto" id="question-1">Question 1</h2>
+<p dir="auto">In a collection of 20 samples, there are 5 which are bad.  Determine the following probabilities (assume no replacement):</p>
+<ul dir="auto">
+<li dir="auto">Randomly select 1 sample and its good.</li>
+<li dir="auto">Randomly select 4 samples and they are all good.</li>
+<li dir="auto">Randomly select 4 samples and they are all bad.</li>
+<li dir="auto">Randomly select 6 samples and only 1 is good.</li>
+</ul>
+<p dir="auto"><br /><br /></p>
+<h2 dir="auto" id="question-2">Question 2</h2>
+<h3 dir="auto" id="part-1">Part 1</h3>
+<p dir="auto">A multiple choice test consists of five questions, each of which has four choices.  Each question has exactly one correct answer. Assume that a student guesses the answer on all five questions.  Complete the following table.  The scenario of &quot;3 Right&quot; has been done for you.  It is calculated by multiplying the number of ways to answer 2 questions incorrectly by the number of ways to select those 2 incorrect questions.  Note that there are <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>4</mn><mn>5</mn></msup><mo>=</mo><mn>1024</mn></mrow><annotation encoding="application/x-tex">4^5 = 1024</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8141079999999999em;vertical-align:0em;"></span><span class="mord"><span class="mord">4</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">5</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1024</span></span></span></span></eq> ways to select answers randomly on the test.</p>
+<table dir="auto">
+<thead dir="auto">
+<tr dir="auto">
+<th style="text-align:center">Scenario</th>
+<th style="text-align:center">Probability</th>
+</tr>
+</thead>
+<tbody dir="auto">
+<tr dir="auto">
+<td style="text-align:center">All Wrong</td>
+<td style="text-align:center"></td>
+</tr>
+<tr dir="auto">
+<td style="text-align:center">1 Right</td>
+<td style="text-align:center"></td>
+</tr>
+<tr dir="auto">
+<td style="text-align:center">2 Right</td>
+<td style="text-align:center"></td>
+</tr>
+<tr dir="auto">
+<td style="text-align:center">3 Right</td>
+<td style="text-align:center"><eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>3</mn><mn>2</mn></msup><mo>⋅</mo><mrow><mo fence="true">(</mo><mfrac linethickness="0px"><mn>5</mn><mn>2</mn></mfrac><mo fence="true">)</mo></mrow><mo>=</mo><mfrac><mn>90</mn><mn>1024</mn></mfrac></mrow><annotation encoding="application/x-tex">3^2 \cdot {5 \choose 2} = \frac{90}{1024}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8141079999999999em;vertical-align:0em;"></span><span class="mord"><span class="mord">3</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">⋅</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1.245118em;vertical-align:-0.35001em;"></span><span class="mord"><span class="mord"><span class="mopen delimcenter" style="top:0em;"><span class="delimsizing size1">(</span></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8951079999999999em;"><span style="top:-2.3550000000000004em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">2</span></span></span></span><span style="top:-3.144em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">5</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.345em;"><span></span></span></span></span></span><span class="mclose delimcenter" style="top:0em;"><span class="delimsizing size1">)</span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1.190108em;vertical-align:-0.345em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.845108em;"><span style="top:-2.6550000000000002em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">1024</span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.394em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">90</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.345em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></eq></td>
+</tr>
+<tr dir="auto">
+<td style="text-align:center">4 Right</td>
+<td style="text-align:center"></td>
+</tr>
+<tr dir="auto">
+<td style="text-align:center">All Right</td>
+<td style="text-align:center"></td>
+</tr>
+</tbody>
+</table>
+<h3 dir="auto" id="part-2">Part 2</h3>
+<p dir="auto">Put the scenarios above in order from most likely to least likely.</p>
+<div  dir="auto" ></div>
+<br />
+<h3 dir="auto" id="part-3">Part 3</h3>
+<p dir="auto">Assume you get 4 points for each correct answer and 0 points for each incorrect answer.  We can calculate the expected grade by considering the different events, their probabilities, and the grade for each of those events.  The formula is as follows:</p>
+<p dir="auto"><eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mstyle scriptlevel="0" displaystyle="true"><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>0</mn></mrow><mi>n</mi></munderover><mi>P</mi><mo stretchy="false">(</mo><mi>i</mi><mo stretchy="false">)</mo><mo>∗</mo><mi>S</mi><mo stretchy="false">(</mo><mi>i</mi><mo stretchy="false">)</mo></mstyle></mrow><annotation encoding="application/x-tex">\displaystyle\sum_{i=0}^n P(i) * S(i)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:2.929066em;vertical-align:-1.277669em;"></span><span class="mop op-limits"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.6513970000000002em;"><span style="top:-1.872331em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">i</span><span class="mrel mtight">=</span><span class="mord mtight">0</span></span></span></span><span style="top:-3.050005em;"><span class="pstrut" style="height:3.05em;"></span><span><span class="mop op-symbol large-op">∑</span></span></span><span style="top:-4.3000050000000005em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">n</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.277669em;"><span></span></span></span></span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">P</span><span class="mopen">(</span><span class="mord mathnormal">i</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.05764em;">S</span><span class="mopen">(</span><span class="mord mathnormal">i</span><span class="mclose">)</span></span></span></span></eq></p>
+<p dir="auto">where <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathnormal">n</span></span></span></span></eq> is the number of questions on the test, <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>i</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">P(i)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">P</span><span class="mopen">(</span><span class="mord mathnormal">i</span><span class="mclose">)</span></span></span></span></eq> is the probability of <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>i</mi></mrow><annotation encoding="application/x-tex">i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.65952em;vertical-align:0em;"></span><span class="mord mathnormal">i</span></span></span></span></eq> questions answered correctly and <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mo stretchy="false">(</mo><mi>i</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">S(i)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.05764em;">S</span><span class="mopen">(</span><span class="mord mathnormal">i</span><span class="mclose">)</span></span></span></span></eq> is the score for getting <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>i</mi></mrow><annotation encoding="application/x-tex">i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.65952em;vertical-align:0em;"></span><span class="mord mathnormal">i</span></span></span></span></eq> questions answered correctly.</p>
+<p dir="auto">What is the expected (average) grade if students guess on every question?</p>
+<p dir="auto"><br /><br /></p>
+<h2 dir="auto" id="question-3">Question 3</h2>
+<p dir="auto">You have two 8-sided dice with each side labeled with the Fibonacci numbers 1, 1, 2, 3, 5, 8, 13, 21.</p>
+<ul dir="auto">
+<li dir="auto">Find <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo stretchy="false">(</mo><mtext>Doubles</mtext><mi mathvariant="normal">∣</mi><mtext>Both Odd</mtext><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">P(\text{Doubles} | \text{Both Odd})</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">P</span><span class="mopen">(</span><span class="mord text"><span class="mord">Doubles</span></span><span class="mord">∣</span><span class="mord text"><span class="mord">Both Odd</span></span><span class="mclose">)</span></span></span></span></eq></li>
+<li dir="auto">Find <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo stretchy="false">(</mo><mtext>Doubles</mtext><mi mathvariant="normal">∣</mi><mtext>Both Even</mtext><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">P(\text{Doubles} | \text{Both Even})</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">P</span><span class="mopen">(</span><span class="mord text"><span class="mord">Doubles</span></span><span class="mord">∣</span><span class="mord text"><span class="mord">Both Even</span></span><span class="mclose">)</span></span></span></span></eq></li>
+</ul>
+<p dir="auto"><br /><br /></p>
+<h2 dir="auto" id="question-4">Question 4</h2>
+<p dir="auto">Email data suggests that 45% of all email is spam.  A common phrase that shows up in Spam is &quot;Act Now&quot;.  It was found that 10% of all spam contained that phrase.  Conversely, 2% of all non-spam contained that phrase.  What is the probability that an email is Spam if it contains the phrase &quot;Act Now&quot;?</p>
+
+</body>
+</html>

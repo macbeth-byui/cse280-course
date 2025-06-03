@@ -1,0 +1,107 @@
+# CSE 280 Challenge Set 09 - Solutions
+
+(c) BYU-Idaho
+
+**Instructions**: Work on all questions as a group as instructed during class.  We will review each answer during class.
+
+## Question 1
+
+List the first 5 terms (use fractions instead of decimals) for the following sequences:
+
+* A geometric sequence in which the first value is 1 and the common ratio is $-\frac{1}{2}$.
+* An arithmetic sequence in which the first value is 1 and the common difference is $-\frac{1}{2}$.
+* A geometric sequence in which the first value is -1 and the common ratio is $-\frac{1}{2}$.
+* An arithmetic sequence in which the first value is -1 and common difference is $-\frac{1}{2}$.
+
+Answer:
+
+* $1, -\frac{1}{2}, \frac{1}{4}, -\frac{1}{8}, \frac {1}{16}$
+* $1, \frac{1}{2}, 0, -\frac{1}{2}, -1$
+* $-1, \frac{1}{2}, -\frac{1}{4}, \frac{1}{8}, -\frac {1}{16}$
+* $-1, -\frac{3}{2}, -2, -\frac{5}{2}, -3$
+
+## Question 2
+
+### Part 1
+
+Evaluate the following:
+
+* $\displaystyle\sum_{i=0}^{5}i^2 = 55$
+
+* $\displaystyle\sum_{i=0}^{5}i^2+3-2i = 43$
+
+### Part 2
+
+Evaluate the following arithmetic and geometric sums using the closed form formulas:
+
+* $\displaystyle\sum_{i=0}^{99}3-2i = -9600$
+
+* $\displaystyle\sum_{i=0}^{10}2 \cdot 3^i = 177147$
+
+Formulas:
+
+$\displaystyle\sum_{i=0}^{n-1}a + id = an + \frac{d(n-1)n}{2}$
+
+$\displaystyle\sum_{i=0}^{n-1}a \cdot r^i = \frac{a(r^n-1)}{r-1}$
+
+## Question 3
+
+### Part 1
+
+After reviewing the following python code, predict what will be displayed.
+
+```python
+def getValue1(n):
+    if n == 0:
+        return 2
+    if n == 1:
+        return 1
+    return getValue1(n-1) - getValue1(n-2)
+
+print([getValue1(n) for n in range(20)])
+```
+
+Answer:  [**2, 1, -1, -2, -1, 1** , 2, 1, -1, -2, -1, 1, 2, 1, -1, -2, -1, 1, 2, 1]
+
+NOTE: Repeated:  2, 1, -1, -2, -1, 1
+
+### Part 2
+
+After reviewing the following python code, predict what will be displayed.  Note that `a % b` will return the integer remainder when we divide `a` and `b`.  For example:
+
+* `18 % 5 = 3`
+* `31 % 13 = 5`
+* `8 % 14 = 8`
+
+```python
+def getValue2(a,b):
+    if b == 0:
+        return a
+    return getValue2(b, a % b)
+
+print(getValue2(12,15))
+print(getValue2(64,24))
+print(getValue2(17,31))
+print(getValue2(121,88))
+```
+
+Answer: 3, 8, 1, 11
+
+### Part 3
+
+What mathematical problem is the `getValue2` function solving?
+
+Answer: Find the greatest common divisor of a and b
+
+## Question 4
+
+What activity does the following recurrence relation perform:
+
+$F(A,B,[First|Rest]) = \begin{cases} B+F(A,B,Rest) &\text{if } First == A \\ First+F(A,B,Rest) &\text{else} \end{cases}$
+
+$F(A,B,[\text{ }]) = [\text{ }]$
+
+Answer: Replace A with B in a word or list
+
+
+

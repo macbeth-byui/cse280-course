@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/4.0.0/github-markdown.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/styles/default.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markdown-it-texmath/css/texmath.min.css">
+<link rel="stylesheet" href="file:///c:\Users\cmacbeth\.vscode\extensions\goessner.mdmath-2.7.4\themes\default\style.css">
+
+</head>
+<body class="markdown-body">
+<h1 dir="auto" id="cse-280-challenge-set-06---solutions">CSE 280 Challenge Set 06 - Solutions</h1>
+<p dir="auto">(c) BYU-Idaho</p>
+<h2 dir="auto" id="question-1">Question 1</h2>
+<p dir="auto">Consider the <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>K</mi><mn>8</mn></msub></mrow><annotation encoding="application/x-tex">K_8</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.07153em;">K</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.07153em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">8</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span></eq> graph below.</p>
+<h3 dir="auto" id="part-1">Part 1</h3>
+<p dir="auto">Find the following:</p>
+<ul dir="auto">
+<li dir="auto">total edges</li>
+<li dir="auto">total vertices</li>
+<li dir="auto">degree of each vertex</li>
+<li dir="auto">total degree of the graph</li>
+</ul>
+<p dir="auto"><img src="group6_graph1.png" alt="" data-src="group6_graph1.png"></p>
+<p dir="auto">Answer:</p>
+<ul dir="auto">
+<li dir="auto">Edges = 28 (7*8/2)</li>
+<li dir="auto">Verticies = 8</li>
+<li dir="auto">Degree of each Vertex = 7</li>
+<li dir="auto">Total Degree = 56</li>
+</ul>
+<h3 dir="auto" id="part-2">Part 2</h3>
+<p dir="auto">What is the relationship between the number of edges and the total degree?</p>
+<p dir="auto">Answer: Total Degree = <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mo>⋅</mo><mo>∣</mo><mi>E</mi><mo>∣</mo></mrow><annotation encoding="application/x-tex">2 \cdot \mid E \mid</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">2</span><span class="mord">⋅</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">∣</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.05764em;">E</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">∣</span></span></span></span></eq></p>
+<h3 dir="auto" id="part-3">Part 3</h3>
+<p dir="auto">Does the graph above have an Euler circuit?  How do you know?</p>
+<p dir="auto">Answer: No.  It has odd degrees.</p>
+<h2 dir="auto" id="question-2">Question 2</h2>
+<p dir="auto">The following graph does not have an Euler circuit.  How can you add 1 new edge to ensure there is a Euler circuit?</p>
+<p dir="auto"><img src="group6_graph2.png" alt="" data-src="group6_graph2.png"></p>
+<p dir="auto">Answer:  Draw an edge connecting nodes 3 and 4.</p>
+<h2 dir="auto" id="question-3">Question 3</h2>
+<p dir="auto">Consider the following two graphs.  If these graphs are isomorphic, then fill in the missing letters A through E.</p>
+<table dir="auto">
+<thead dir="auto">
+<tr dir="auto">
+<th style="text-align:center">Graph 1</th>
+<th style="text-align:center">Graph 2</th>
+</tr>
+</thead>
+<tbody dir="auto">
+<tr dir="auto">
+<td style="text-align:center"><img src="group06_graph3.drawio.png" alt="" data-src="group06_graph3.drawio.png"></td>
+<td style="text-align:center"><img src="group06_graph4.drawio.png" alt="" data-src="group06_graph4.drawio.png"></td>
+</tr>
+</tbody>
+</table>
+<p dir="auto">Answer: There are multiple ways to show the mapping.  If you start with A on the top, the follow one of the lines to put B, C, D, and E.  Going around the star, one order would be A, D, B, E, C and another order would be A, C, E, B, D.</p>
+<h2 dir="auto" id="question-4">Question 4</h2>
+<p dir="auto">Consider the Finite State Machine (FSM) below.</p>
+<p dir="auto"><img src="group6_graph5.png" alt="" data-src="group6_graph5.png"></p>
+<p dir="auto"><strong>Part 1</strong></p>
+<ul dir="auto">
+<li dir="auto">What is the final state with input 100011?  Is the input accepted?</li>
+<li dir="auto">What is the final state with input 0000? Is the input accepted?</li>
+<li dir="auto">What is the final state with input 1100? Is the input accepted?</li>
+</ul>
+<p dir="auto">Answer:</p>
+<ul dir="auto">
+<li dir="auto">C - Accepted</li>
+<li dir="auto">D - Not Accepted</li>
+<li dir="auto">C - Accepted</li>
+</ul>
+<p dir="auto"><strong>Part 2</strong></p>
+<p dir="auto">What type of input stream does the FSM look for?</p>
+<p dir="auto">A string that has at least one 1 and one 0.</p>
+<h2 dir="auto" id="question-5">Question 5</h2>
+<p dir="auto"><strong>Part 1</strong></p>
+<p dir="auto">Draw an FSM to determine if a string of only A's and B's has the substring &quot;ABAB&quot; within it.  Test the FSM with:</p>
+<ul dir="auto">
+<li dir="auto">AABABB - Match</li>
+<li dir="auto">ABAABAB - Match</li>
+<li dir="auto">ABBABAABABAAA - Match</li>
+</ul>
+<p dir="auto">Answer:</p>
+<p dir="auto"><img src="group06_graph6.drawio.png" alt="" data-src="group06_graph6.drawio.png"></p>
+<p dir="auto"><strong>Part 2</strong></p>
+<p dir="auto">Draw an FSM to determine how many times the substring &quot;ABAB&quot; exists within the string.  Recall that you do this by counting how many times you arrive at the acceptance state.  Test the FSM with:</p>
+<ul dir="auto">
+<li dir="auto">ABABABAB - 3 times</li>
+<li dir="auto">ABAABABABB - 2 times</li>
+</ul>
+<p dir="auto">Answer:</p>
+<p dir="auto"><img src="group06_graph7.drawio.png" alt="" data-src="group06_graph7.drawio.png"></p>
+
+</body>
+</html>

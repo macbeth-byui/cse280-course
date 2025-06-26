@@ -11,7 +11,6 @@ For each relation below, determine which property they satisfy.  Each relation h
 |$_aR_b, \text{ if } a^2 = b^2$|||||
 |$_aR_b, \text{ if }\lfloor a \rfloor = b$|||||
 |$_aR_b, \text{ if } a-b \ge 0$|||||
-|$_aR_b, \text{ if } -a-b = 1$|||||
 |$_aR_b, \text{ if } a-b = 5$|||||
 
 <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />

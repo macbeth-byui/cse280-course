@@ -11,7 +11,6 @@ For each relation below, determine which property they satisfy.  Each relation h
 |$_aR_b, \text{ if } a^2 = b^2$|Reflexive|Symmetric|Yes|Yes|
 |$_aR_b, \text{ if }\lfloor a \rfloor = b$|Neither|Anti-Symmetric|Yes|No|
 |$_aR_b, \text{ if } a-b \ge 0$|Reflexive|Anti-Symmetric|Yes|No|
-|$_aR_b, \text{ if } -a-b = 1$|Neither|Symmetric|No|No|
 |$_aR_b, \text{ if } a-b = 5$|Anti-Reflexive|Anti-Symmetric|No|No|
 
 ## Question 2

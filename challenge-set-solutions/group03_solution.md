@@ -89,7 +89,7 @@ Consider the following sets where the universal set for this problem is $\mathbf
 * $C$ = The set of all perfect squares.
 * $D$ = The set of all multiples of 10.
 
-Using these sets and various set operators (e.g. union, intersection, complement, subset, etc...), represent the following statements in set notation:
+Using these sets and various notations (including: $\subset$, $\subseteq$, $\cap$, $\cup$ $\empty$, $=$, $\neq$, $\overline{X}$), represent the following statements in set notation:
 
 * All multiples of 10 are even numbers.
 * None of the perfect squares are prime numbers.

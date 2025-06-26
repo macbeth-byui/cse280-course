@@ -8,7 +8,7 @@
 
 Consider the encoding tree below.  How would you encode `SEED`?  
 
-![](group7_graph1.png)
+![](group07_graph1.drawio.png)
 
 Answer:
 

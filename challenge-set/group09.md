@@ -78,6 +78,8 @@ What mathematical problem is the `getValue2` function solving?
 
 ## Question 4
 
+One method of describing a list or a string (which is just a list of characters) is to use th $[First|Rest]$ format.  If the original list contains $[1,2,3,4,5]$ then we can represent that as $\Big[ 1 \mid [2,3,4,5] \Big]$.  The value of $First$ is the first element of the list and $Rest$ is a list containing the remaining elements.  
+
 What activity does the following recurrence relation perform:
 
 $F(A,B,[First|Rest]) = \begin{cases} B+F(A,B,Rest) &\text{if } First == A \\ First+F(A,B,Rest) &\text{else} \end{cases}$

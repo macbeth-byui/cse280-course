@@ -14,9 +14,9 @@ In a collection of 20 samples, there are 5 which are bad.  Determine the followi
 Answers: 
 
 * ${15 \choose 1} / {20 \choose 1} = \frac{15}{20} = 75\%$
-* ${15 \choose 4} / {20 \choose 4} = \frac{16*15*14*13*12}{20*19*18*17*16} = \frac{1365}{4845} \approx 28\%$
+* ${15 \choose 4} / {20 \choose 4} = \frac{15*14*13*12}{20*19*18*17} = \frac{1365}{4845} \approx 28\%$
 * ${5 \choose 4} / {20 \choose 4} = \frac{5}{4845} \approx 0.1\%$
-* $({5 \choose 5} \cdot {15 \choose 1}) / {20 \choose 6} = \frac{1}{\frac{20*19*18*17*16*15}{6*5*4*3*2}} = \frac{1}{38760} \approx 0.04\%$
+* $({5 \choose 5} \cdot {15 \choose 1}) / {20 \choose 6} = \frac{15}{\frac{20*19*18*17*16*15}{6*5*4*3*2}} = \frac{1}{38760} \approx 0.04\%$
 
 
 ## Question 2

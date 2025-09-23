@@ -66,7 +66,7 @@ Write the statement in predicate logic.  Hint: There is a conditional ($\to$) in
 
 Formally negate the statement (moving the $\neg$ as far to the right as possible).
 
-<br /><br /><br /><br /><br /><br />
+<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
 
 
 **Part 3**

@@ -82,7 +82,7 @@ Assume the computer has 8 cores and 32 GB memory available.  If we divide the ta
 
 ## Question 6
 
-Consider the following sets where the universal set for this problem is $\mathbf{N}$ (does not include 0):
+Consider the following sets where the universal set for this problem is $\mathbf{Z}^+$:
 
 * $A$ = The set of all even numbers.
 * $B$ = The set of all prime numbers.
@@ -93,7 +93,7 @@ Using these sets and various notations (including: $\subset$, $\subseteq$, $\cap
 
 * All multiples of 10 are even numbers.
 * None of the perfect squares are prime numbers.
-* If you take all the prime numbers, all the even numbers, all the perfect squares, and all the multiples of 10, you still won't have all the natural numbers.  Can you write this without using $\mathbf{N}$ in your answer?
+* If you take all the prime numbers, all the even numbers, all the perfect squares, and all the multiples of 10, you still won't have all the positive integers.  Can you write this without using $\mathbf{Z}^+$ in your answer?
 
 Answers:
 

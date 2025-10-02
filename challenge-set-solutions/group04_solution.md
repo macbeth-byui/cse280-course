@@ -81,7 +81,7 @@ Graph function $f$ using a graphing calculator. Explain what this so-called "saw
 
 Answer:
 
-$f$ reprsents the positive fractional part of $x$
+$f$ reprsents the positive fractional distance from the ceiling $[0,1)$
 
 **Part 2**
 

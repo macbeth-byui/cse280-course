@@ -52,8 +52,6 @@ Complete the di-graph below to demonstrate that congruence is an equivalence rel
 
 ![](group10_graph.drawio.png)
 
-<br />
-
 ## Question 6
 
 Use the following process with the table below:

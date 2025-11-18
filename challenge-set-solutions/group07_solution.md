@@ -79,21 +79,31 @@ Answer: Connect 0 with 1, 2, and 3; Connect 2 with 8; Connect 3 with 4; Connect 
 
 ### Part 3
 
-Compare how many verticies and edges are in both spanning trees.
-
-Answer: They both have 14 verticies and 13 edges
-
-### Part 4
-
-Draw both spanning trees rooted at vertex 0. Compare the heights of the two trees.  Recall the root is at height 0.
+Draw both spanning trees rooted at vertex 0 next to the graphs above. Compare the heights of the two trees.  
 
 Answer:
 * BFS - Height of 5
 * DFS - Height of 8
 
-### Part 5
+### Part 4
 
 Suppose that each vertex in the graph has the ability to transmit (or forward) a message to all adjacent verticies.  If I wanted to transmit a message from vertex 0 to all the verticies in the original graph, should I create a spanning tree using BFS or DFS?  Why?  
 
-Answer: BFS because it produces the shortest path from the starting vertex.
+Answer: Both will work but the BFS produces the shortest number of steps ("hops") to transmit to everyone.
 
+## Question 4
+
+Visit the following online maze solver: https://zyrridian.github.io/bfs-dfs-maze/
+
+Answer the following questions:
+* Generate new mazes (big or small) and solve them using BFS or DFS (or at the same time).  Set the speed slow enough so you can see the behavior of BFS and DFS. Note that the maze can be represented as a graph of allowable movements.  Which algorithm most commonly found the end of the maze the fastest?
+
+Answer: BFS runs faster
+
+* Which algorithm used the most computer memory?  
+
+Answer: BFS must store all paths being followed which will increase as time progresses.  The DFS is only storing the one path it is following. When DFS backtracks, it removes the parts of the path that were previously remembered.  BFS uses more memory.
+
+* Consider writing a solver for Soduku.  You would have 9 possible numbers (open paths in the maze) to put in each of the boxes not yet populated.  If a number choice leads to breaking a rule, then we can't move forward on that path (wall in the maze).  How might memory impact our decision of whether to use BFS or DFS?
+
+Answer: With BFS, I must store the results of all possible paths.  In a blank Soduku board, that would be $9^81$ possible solutions (paths) to follow.  For DFS, it only store the 1 possible path at a time which would be $81$  We must use DFS for Soduku.

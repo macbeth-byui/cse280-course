@@ -51,18 +51,30 @@ For example, the tree for the first two operations on the left hand side could b
 <p dir="auto"><img src="group7_graph3.png" alt="" data-src="group7_graph3.png"></p>
 <p dir="auto">Answer: Connect 0 with 1, 2, and 3; Connect 2 with 8; Connect 3 with 4; Connect 8 with 9 and 10; Connect 4 with 5 and 7; Connect 5 with 6 and 11; COnnect 11 with 12 and 13.</p>
 <h3 dir="auto" id="part-3-1">Part 3</h3>
-<p dir="auto">Compare how many verticies and edges are in both spanning trees.</p>
-<p dir="auto">Answer: They both have 14 verticies and 13 edges</p>
-<h3 dir="auto" id="part-4-1">Part 4</h3>
-<p dir="auto">Draw both spanning trees rooted at vertex 0. Compare the heights of the two trees.  Recall the root is at height 0.</p>
+<p dir="auto">Draw both spanning trees rooted at vertex 0 next to the graphs above. Compare the heights of the two trees.</p>
 <p dir="auto">Answer:</p>
 <ul dir="auto">
 <li dir="auto">BFS - Height of 5</li>
 <li dir="auto">DFS - Height of 8</li>
 </ul>
-<h3 dir="auto" id="part-5">Part 5</h3>
+<h3 dir="auto" id="part-4-1">Part 4</h3>
 <p dir="auto">Suppose that each vertex in the graph has the ability to transmit (or forward) a message to all adjacent verticies.  If I wanted to transmit a message from vertex 0 to all the verticies in the original graph, should I create a spanning tree using BFS or DFS?  Why?</p>
-<p dir="auto">Answer: BFS because it produces the shortest path from the starting vertex.</p>
+<p dir="auto">Answer: Both will work but the BFS produces the shortest number of steps (&quot;hops&quot;) to transmit to everyone.</p>
+<h2 dir="auto" id="question-4">Question 4</h2>
+<p dir="auto">Visit the following online maze solver: <a href="https://zyrridian.github.io/bfs-dfs-maze/">https://zyrridian.github.io/bfs-dfs-maze/</a></p>
+<p dir="auto">Answer the following questions:</p>
+<ul dir="auto">
+<li dir="auto">Generate new mazes (big or small) and solve them using BFS or DFS (or at the same time).  Set the speed slow enough so you can see the behavior of BFS and DFS. Note that the maze can be represented as a graph of allowable movements.  Which algorithm most commonly found the end of the maze the fastest?</li>
+</ul>
+<p dir="auto">Answer: BFS runs faster</p>
+<ul dir="auto">
+<li dir="auto">Which algorithm used the most computer memory?</li>
+</ul>
+<p dir="auto">Answer: BFS must store all paths being followed which will increase as time progresses.  The DFS is only storing the one path it is following. When DFS backtracks, it removes the parts of the path that were previously remembered.  BFS uses more memory.</p>
+<ul dir="auto">
+<li dir="auto">Consider writing a solver for Soduku.  You would have 9 possible numbers (open paths in the maze) to put in each of the boxes not yet populated.  If a number choice leads to breaking a rule, then we can't move forward on that path (wall in the maze).  How might memory impact our decision of whether to use BFS or DFS?</li>
+</ul>
+<p dir="auto">Answer: With BFS, I must store the results of all possible paths.  In a blank Soduku board, that would be <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>9</mn><mn>8</mn></msup><mn>1</mn></mrow><annotation encoding="application/x-tex">9^81</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8141079999999999em;vertical-align:0em;"></span><span class="mord"><span class="mord">9</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">8</span></span></span></span></span></span></span></span><span class="mord">1</span></span></span></span></eq> possible solutions (paths) to follow.  For DFS, it only store the 1 possible path at a time which would be <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>81</mn></mrow><annotation encoding="application/x-tex">81</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">81</span></span></span></span></eq>  We must use DFS for Soduku.</p>
 
 </body>
 </html>

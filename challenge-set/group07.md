@@ -58,6 +58,8 @@ In the graph below, highlight or mark a spanning tree by using Depth First Searc
 
 ![](group7_graph3.png)
 
+<br />
+
 ### Part 2
 
 In the same graph below, highlight or mark a spanning tree by using Breadth First Search.  Start at node 0.
@@ -66,18 +68,21 @@ In the same graph below, highlight or mark a spanning tree by using Breadth Firs
 
 ### Part 3
 
-Compare how many verticies and edges are in both spanning trees.
-
-<br /><br />
+Draw both spanning trees rooted at vertex 0 next to the graphs above. Compare the heights of the two trees.  
 
 ### Part 4
 
-Draw both spanning trees rooted at vertex 0. Compare the heights of the two trees.  
+Suppose that each vertex in the graph has the ability to transmit (or forward) a message to all adjacent verticies.  If I wanted to transmit a message from vertex 0 to all the verticies in the original graph, should I create a spanning tree using BFS or DFS?  Why?  
 
 <br /><br />
 
-### Part 5
+## Question 4
 
-Suppose that each vertex in the graph has the ability to transmit (or forward) a message to all adjacent verticies.  If I wanted to transmit a message from vertex 0 to all the verticies in the original graph, should I create a spanning tree using BFS or DFS?  Why?  
+Visit the following online maze solver: https://zyrridian.github.io/bfs-dfs-maze/
 
+Answer the following questions:
+* Generate new mazes (big or small) and solve them using BFS or DFS (or at the same time).  Set the speed slow enough so you can see the behavior of BFS and DFS. Note that the maze can be represented as a graph of allowable movements.  Which algorithm most commonly found the end of the maze the fastest?
 
+* Which algorithm used the most computer memory?  
+
+* Consider writing a solver for Soduku.  You would have 9 possible numbers (open paths in the maze) to put in each of the boxes not yet populated.  If a number choice leads to breaking a rule, then we can't move forward on that path (wall in the maze).  How might memory impact our decision of whether to use BFS or DFS?

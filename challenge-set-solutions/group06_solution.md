@@ -36,6 +36,12 @@ Does the graph above have an Euler circuit?  How do you know?
 
 Answer: No.  It has odd degrees.
 
+### Part 4
+
+For which values of $n$ does $K_n$ contain an Euler circuit
+
+Answer: When $n$ is odd.
+
 ## Question 2
 
 The following graph does not have an Euler circuit.  How can you add 1 new edge to ensure there is a Euler circuit?
@@ -46,6 +52,8 @@ Answer:  Draw an edge connecting nodes 3 and 4.
 
 ## Question 3
 
+### Part 1
+
 Consider the following two graphs.  If these graphs are isomorphic, then fill in the missing letters A through E.
 
 |Graph 1|Graph 2
@@ -53,6 +61,12 @@ Consider the following two graphs.  If these graphs are isomorphic, then fill in
 |![](group06_graph3.drawio.png)|![](group06_graph4.drawio.png)|
 
 Answer: There are multiple ways to show the mapping.  If you start with A on the top, the follow one of the lines to put B, C, D, and E.  Going around the star, one order would be A, D, B, E, C and another order would be A, C, E, B, D.
+
+### Part 2
+
+Using the second graph above, determine if the traversal $A \to B \to C \to D \to E \to A$ is one or more of the following: Walk, Closed Walk, Circuit, Cycle, Euler Circuit, Hamilton Cycle.
+
+Answer: It is all 6 of these.
 
 ## Question 4
 

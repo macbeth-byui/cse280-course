@@ -25,6 +25,10 @@ What is the relationship between the number of edges and the total degree?
 
 Does the graph above have an Euler circuit?  How do you know?
 
+### Part 4
+
+For which values of $n$ does $K_n$ contain an Euler circuit
+
 ## Question 2
 
 The following graph does not have an Euler circuit.  How can you add 1 new edge to ensure there is a Euler circuit?
@@ -33,11 +37,17 @@ The following graph does not have an Euler circuit.  How can you add 1 new edge 
 
 ## Question 3
 
+### Part 1
+
 Consider the following two graphs.  If these graphs are isomorphic, then fill in the missing letters A through E.
 
 |Graph 1|Graph 2
 |:-:|:-:|
 |![](group06_graph3.drawio.png)|![](group06_graph4.drawio.png)|
+
+### Part 2
+
+Using the second graph above, determine if the traversal $A \to B \to C \to D \to E \to A$ is one or more of the following: Walk, Closed Walk, Circuit, Cycle, Euler Circuit, Hamilton Cycle.
 
 <br /><br /><br /><br />
 
@@ -68,7 +78,7 @@ Draw an FSM to determine if a string of only A's and B's has the substring "ABAB
 * ABAABAB - Match
 * ABBABAABABAAA - Match
 
-<br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
 
 **Part 2**
 

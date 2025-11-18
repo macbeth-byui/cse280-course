@@ -32,7 +32,7 @@ Answer:
 
 * Not onto because you can't get ever integer from an integer.
 * Not 1-1 because multiple $x$ map to the same value
-* Not 1-1 because 3 different values of $x$ map to the same $y=0$)
+* Not 1-1 because 3 different values of $x$ map to the same $y=0$
 * Not onto because missing 0 and negative
 * Not well defined at x=0
 * All

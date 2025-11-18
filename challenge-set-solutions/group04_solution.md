@@ -25,7 +25,7 @@ For each of these functions, determine if they are well-defined, one-to-one, ont
 |$f : \mathbf{R} \to \mathbf{R}, \text{ where } f(x) = x^5-3x$|x||x||
 |$f : \mathbf{R}^+ \to \mathbf{R}, \text{ where } f(x) = \frac{1}{x}$|x|x|||
 |$f : \mathbf{R} \to \mathbf{R}, \text{ where } f(x) = \log_5 (x^2)$|||||
-|$f : \lbrace x \mid x \in \mathbf{R}, x \gt 0 \rbrace \to \mathbf{R}, \text{ where } f(x) = \log_5 (x^2)$|x|x|x|x|
+|$f : \mathbf{R^+} \to \mathbf{R}, \text{ where } f(x) = \log_5 (x^2)$|x|x|x|x|
 |$f : \lbrace x \mid x \in \mathbf{R}, x \ne 0 \rbrace \to \mathbf{R}, \text{ where } f(x) = \log_5 (x^2)$|x||x||
 
 Answer:
@@ -45,7 +45,7 @@ Answer:
 Find the inverse $f^{-1}(x)$ of the following functions:
 
 * $f : \mathbf{R} \to \mathbf{R}, \text{ where } f(x) = (x - 32) * 5/9$
-* $f : \mathbf{R} \to \lbrace x \mid x \in \mathbf{R}, x \gt 0 \rbrace\text{ where } f(x) = \frac{1}{2^x}$
+* $f : \mathbf{R} \to \mathbf{R^+} \text{ where } f(x) = \frac{1}{2^x}$
 * $f : \mathbf{R} \to \mathbf{Z}, \text{ where } f(x) = \lfloor x \rfloor$
 * $f : \mathbf{R} \to \mathbf{R}, \text{ where } f(x) = x^2$
 * $f : \mathbf{R} \to \mathbf{R}, \text{ where } f(x) = x^3$
@@ -77,11 +77,11 @@ Define the following two functions:
 
 **Part 1**
 
-Graph function $f$ using a graphing calculator. Explain what this so-called "sawtooth" function represents.
+Graph both functions $f$ and $g$ using a graphing calculator. Explain what this so-called "sawtooth" function represents.
 
 Answer:
 
-$f$ reprsents the positive fractional distance from the ceiling $[0,1)$
+$f$ reprsents the positive fractional distance from the ceiling.  $g$ represents the fractional part.  The range of both of these is $[0,1)$.
 
 **Part 2**
 

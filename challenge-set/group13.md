@@ -59,7 +59,7 @@ You have two 8-sided dice with each side labeled with the Fibonacci numbers 1, 1
 
 ## Question 4
 
-Email data suggests that 45% of all email is spam.  A common phrase that shows up in Spam is "Act Now".  It was found that 10% of all spam contained that phrase.  Conversely, 2% of all non-spam contained that phrase.  What is the probability that an email is Spam if it contains the phrase "Act Now"?
+Email data suggests that 45% of all email is spam.  A common phrase that shows up in Spam is "Act Now".  It was found that 10% of all spam contained that phrase.  It was found that 2% of all non-spam contained that phrase.  What is the probability that an email is Spam if it contains the phrase "Act Now"?
 
 
 

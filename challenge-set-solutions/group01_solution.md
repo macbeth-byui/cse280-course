@@ -80,12 +80,12 @@ Answer:  If the ground is not wet, then its not raining. -- Yes
 
 Determine if the following propositions written in English are True or False:
 
-* If 2 is even, then 5 is prime. - True
-* If 3 is even, then 6 is prime. - True
-* If 5 is odd, then 8 is prime. - False
-* If 8 is odd, then 11 is prime. - True
-* 10 is even if and only if 4 is prime - False
-* 11 is even if and only if 6 is prime - True
+* If 2 is even, then 5 is prime. - True ($T \to T = T$)
+* If 3 is even, then 6 is prime. - True ($F \to F = T$)
+* If 5 is odd, then 8 is prime. - False ($T \to F = F$)
+* If 8 is odd, then 11 is prime. - True ($F \to T = T$)
+* 10 is even if and only if 4 is prime - False ($T \leftrightarrow F = F$)
+* 11 is even if and only if 6 is prime - True ($F \leftrightarrow F = T$)
 
 ## Question 5
 
@@ -105,10 +105,8 @@ $((B \to C) \leftrightarrow (\neg C \to \neg B)) \land ((C \to B) \leftrightarro
 
 $((A \to C) \leftrightarrow (\neg C \to \neg A)) \land ((C \to A) \leftrightarrow (\neg A \to \neg C))$
 
-Answer: Either both the implication and contra-positive are True or either both the implication and the contra-positive are False.  This is beacuse the implication and contra-positive are always equal to each other.
+Answer: Look at one of the 6 things that are $\land$'ed together.  For example:
 
+$((A \to B) \leftrightarrow (\neg B \to \neg A))$
 
-
-
-
-
+Note that the right hand side of the biconditional is the contrapositive of the left hand side.  Since the contrapositive is equivalent to the original conditional, then we can say this one part is equal to $True$. The same thing applies to the other 5.  We are $\land$'ing six $True$ values.  Therefore, it's always True (a tautology).

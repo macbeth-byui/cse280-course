@@ -78,6 +78,20 @@ Complete the di-graph below to demonstrate that congruence is an equivalence rel
 
 ## Question 6
 
+When doing modular arithmetic, the following identities are used to simplify the math.  Use these identities to solve each of the problems.
+
+* $(a + b) \text{ mod } c = ((a \text{ mod } c) + (b \text{ mod } c)) \text{ mod }c$
+* $(a * b) \text{ mod } c = ((a \text{ mod } c) * (b \text{ mod } c)) \text{ mod }c$
+* $(a^b) \text{ mod } c = (a \text{ mod } c)^b \text{ mod }c$
+
+Solve:
+
+* $(22 + 39) \text{ mod } 8 = 5$
+* $(22 * 39) \text{ mod } 8 = 2$
+* $(22^{39}) \text{ mod } 8 = 0$
+
+## Question 7
+
 Use the following process with the table below:
 
 1. Cross out the box with 1.

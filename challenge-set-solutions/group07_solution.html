@@ -14,7 +14,7 @@
 <p dir="auto">(c) BYU-Idaho</p>
 <h2 dir="auto" id="question-1">Question 1</h2>
 <h3 dir="auto" id="part-1">Part 1</h3>
-<p dir="auto">Consider the encoding tree below.  How would you encode <code>SEED</code>?</p>
+<p dir="auto">Consider the encoding tree below.  How would you encode <code>SEED</code>?  Note that we are defining left as 0 and right as 1.</p>
 <p dir="auto"><img src="group07_graph1.drawio.png" alt="" data-src="group07_graph1.drawio.png"></p>
 <p dir="auto">Answer:</p>
 <p dir="auto">11000101</p>
@@ -23,7 +23,7 @@
 <p dir="auto">Answer:</p>
 <p dir="auto">Save 24 bits</p>
 <h2 dir="auto" id="question-2">Question 2</h2>
-<h3 dir="auto" id="part-1-1">Part 1</h3>
+<h3 dir="auto" id="part-1">Part 1</h3>
 <p dir="auto">Create a binary tree that represents the following mathematical expression written using in-fix notation:</p>
 <p dir="auto"><eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mn>2</mn><mo>+</mo><mo stretchy="false">(</mo><mn>9</mn><mo>−</mo><mn>4</mn><mo stretchy="false">)</mo><mo stretchy="false">)</mo><mo>∗</mo><mo stretchy="false">(</mo><mn>8</mn><mi mathvariant="normal">/</mi><mo stretchy="false">(</mo><mn>4</mn><mo>−</mo><mn>2</mn><mo stretchy="false">)</mo><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(2 + (9 - 4)) * (8 / (4 - 2))</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord">2</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord">9</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">4</span><span class="mclose">))</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord">8/</span><span class="mopen">(</span><span class="mord">4</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">2</span><span class="mclose">))</span></span></span></span></eq></p>
 <p dir="auto">Note that you only need to put numbers and operators in the tree.  Parentheses are not needed because they are implied by the parent/child relationship in the tree.
@@ -32,7 +32,7 @@ For example, the tree for the first two operations on the left hand side could b
 <p dir="auto">Verify that the forward in-order traversal of the tree matches the expression above (with the implied parentheses).</p>
 <p dir="auto">Answer:</p>
 <p dir="auto"><img src="group07_graph2.drawio.png" alt="" data-src="group07_graph2.drawio.png"></p>
-<h3 dir="auto" id="part-2-1">Part 2</h3>
+<h3 dir="auto" id="part-2">Part 2</h3>
 <p dir="auto">Determine the pre-order traversal of the tree you created in Part 1.  This is the pre-fix notation (or Polish Notation) of the expression.  Put spaces in between each number and operator.</p>
 <p dir="auto">Answer: * + 2 - 9 4 / 8 - 4 2</p>
 <h3 dir="auto" id="part-3">Part 3</h3>
@@ -42,22 +42,22 @@ For example, the tree for the first two operations on the left hand side could b
 <p dir="auto">Goto the website: <a href="https://www.rpn-calc.com/">https://www.rpn-calc.com/</a> and enter in your Reverse Polish Notation (spaces in between each number and operator) and verify the answer is correct (solve the expression in Part 1).  Why are parentheses not required?</p>
 <p dir="auto">Answer:  28.  The tree structure captures the parentheses.</p>
 <h2 dir="auto" id="question-3">Question 3</h2>
-<h3 dir="auto" id="part-1-2">Part 1</h3>
+<h3 dir="auto" id="part-1">Part 1</h3>
 <p dir="auto">In the graph below, highlight or mark a spanning tree by using Depth First Search. Start at node 0.</p>
 <p dir="auto"><img src="group7_graph3.png" alt="" data-src="group7_graph3.png"></p>
 <p dir="auto">Answer: Follow: 0, 1, 2, 3, 4, 5, 6, 7, go back to 5 and follow 11, 12, 13, go back to 2 and follow 8, 9, 10</p>
-<h3 dir="auto" id="part-2-2">Part 2</h3>
+<h3 dir="auto" id="part-2">Part 2</h3>
 <p dir="auto">In the same graph below, highlight or mark a spanning tree by using Breadth First Search.  Start at node 0.</p>
 <p dir="auto"><img src="group7_graph3.png" alt="" data-src="group7_graph3.png"></p>
 <p dir="auto">Answer: Connect 0 with 1, 2, and 3; Connect 2 with 8; Connect 3 with 4; Connect 8 with 9 and 10; Connect 4 with 5 and 7; Connect 5 with 6 and 11; COnnect 11 with 12 and 13.</p>
-<h3 dir="auto" id="part-3-1">Part 3</h3>
+<h3 dir="auto" id="part-3">Part 3</h3>
 <p dir="auto">Draw both spanning trees rooted at vertex 0 next to the graphs above. Compare the heights of the two trees.</p>
 <p dir="auto">Answer:</p>
 <ul dir="auto">
 <li dir="auto">BFS - Height of 5</li>
 <li dir="auto">DFS - Height of 8</li>
 </ul>
-<h3 dir="auto" id="part-4-1">Part 4</h3>
+<h3 dir="auto" id="part-4">Part 4</h3>
 <p dir="auto">Suppose that each vertex in the graph has the ability to transmit (or forward) a message to all adjacent verticies.  If I wanted to transmit a message from vertex 0 to all the verticies in the original graph, should I create a spanning tree using BFS or DFS?  Why?</p>
 <p dir="auto">Answer: Both will work but the BFS produces the shortest number of steps (&quot;hops&quot;) to transmit to everyone.</p>
 <h2 dir="auto" id="question-4">Question 4</h2>
@@ -74,7 +74,7 @@ For example, the tree for the first two operations on the left hand side could b
 <ul dir="auto">
 <li dir="auto">Consider writing a solver for Soduku.  You would have 9 possible numbers (open paths in the maze) to put in each of the boxes not yet populated.  If a number choice leads to breaking a rule, then we can't move forward on that path (wall in the maze).  How might memory impact our decision of whether to use BFS or DFS?</li>
 </ul>
-<p dir="auto">Answer: With BFS, I must store the results of all possible paths.  In a blank Soduku board, that would be <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>9</mn><mn>8</mn></msup><mn>1</mn></mrow><annotation encoding="application/x-tex">9^81</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8141079999999999em;vertical-align:0em;"></span><span class="mord"><span class="mord">9</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">8</span></span></span></span></span></span></span></span><span class="mord">1</span></span></span></span></eq> possible solutions (paths) to follow.  For DFS, it only store the 1 possible path at a time which would be <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>81</mn></mrow><annotation encoding="application/x-tex">81</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">81</span></span></span></span></eq>  We must use DFS for Soduku.</p>
+<p dir="auto">Answer: With BFS, I must store the results of all possible paths.  In a blank Soduku board, that would be <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>9</mn><mn>81</mn></msup></mrow><annotation encoding="application/x-tex">9^{81}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8141079999999999em;vertical-align:0em;"></span><span class="mord"><span class="mord">9</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">81</span></span></span></span></span></span></span></span></span></span></span></span></eq> possible solutions (paths) to follow.  For DFS, it only store the 1 possible path at a time which would be <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>81</mn></mrow><annotation encoding="application/x-tex">81</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">81</span></span></span></span></eq>  We must use DFS for Soduku.</p>
 
 </body>
 </html>

@@ -6,7 +6,7 @@
 
 ### Part 1
 
-Consider the encoding tree below.  How would you encode `SEED`?  
+Consider the encoding tree below.  How would you encode `SEED`?  Note that we are defining left as 0 and right as 1.
 
 ![](group07_graph1.drawio.png)
 
@@ -106,4 +106,4 @@ Answer: BFS must store all paths being followed which will increase as time prog
 
 * Consider writing a solver for Soduku.  You would have 9 possible numbers (open paths in the maze) to put in each of the boxes not yet populated.  If a number choice leads to breaking a rule, then we can't move forward on that path (wall in the maze).  How might memory impact our decision of whether to use BFS or DFS?
 
-Answer: With BFS, I must store the results of all possible paths.  In a blank Soduku board, that would be $9^81$ possible solutions (paths) to follow.  For DFS, it only store the 1 possible path at a time which would be $81$  We must use DFS for Soduku.
+Answer: With BFS, I must store the results of all possible paths.  In a blank Soduku board, that would be $9^{81}$ possible solutions (paths) to follow.  For DFS, it only store the 1 possible path at a time which would be $81$  We must use DFS for Soduku.

@@ -6,7 +6,7 @@
 
 ### Part 1
 
-Consider the encoding tree below.  How would you encode `SEED`?  
+Consider the encoding tree below.  How would you encode `SEED`?  Note that we are defining left as 0 and right as 1.  
 
 ![](group07_graph1.drawio.png)
 

@@ -57,7 +57,7 @@ Answer:
 
 Assuming a standard 52 card deck, how many ways are there to get the following from 5 cards drawn without replacement (the first is done for you):
 
-* 4 of a Kind = select a rank $13 \choose 1$ $\cdot$ select all 4 suits $4 \choose 4$ $\cdot$ select a different rank for the 5th card $12 \choose 1$ $\cdot$ select a suite from the new rank $4 \choose 1$ $= 624$
+* 4 of a Kind = select a rank $13 \choose 1$ $\cdot$ select all 4 suits $4 \choose 4$ $\cdot$ select a different rank for the 5th card $12 \choose 1$ $\cdot$ select a suit from the new rank $4 \choose 1$ $= 624$
 * Full House (3 of kind and 2 of a kind in different ranks)?
 * 3 of a Kind (don't include Full House or 4 of a Kind)
 

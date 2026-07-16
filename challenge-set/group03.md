@@ -1,6 +1,6 @@
 # CSE 280 Challenge Set 03
 
-(c) BYU-Idaho
+First & Last Name: __________________________________________________________
 
 ## Question 1
 
